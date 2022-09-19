@@ -52,3 +52,23 @@
 // }
 
 // solution('pPoooyY');
+
+//7번 하샤드
+//12 = true
+// function solution(x) {
+//   let sum = 0;
+//   let a = String(x).split('');
+//   console.log(a);
+//   [];
+//   for (let i = 0; i < a.length; i++) {
+//     sum += Number(a[i]);
+//   }
+//   return x / 3 === 0 ? true : false;
+// }
+
+//8번 정수 내림차순
+//118372 -> 873211
+// function solution(n) {
+//   console.log(String(n).split('').sort().reverse().join(''));
+// }
+// solution(118372);
