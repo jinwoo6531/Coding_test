@@ -73,12 +73,30 @@
 // }
 // solution(118372);
 
-
 //9번 함수 solution은 정수 x와 자연수 n을 입력 받아, x부터 시작해 x씩 증가하는 숫자를 n개 지니는 리스트를 리턴해야 합니다
-function solution(x, n) {
-    var answer = [];
-    for (let i = 1; i <= n; i++) {
-        answer.push(x*i)
-    }
-    return answer;
+// function solution(x, n) {
+//     var answer = [];
+//     for (let i = 1; i <= n; i++) {
+//         answer.push(x*i)
+//     }
+//     return answer;
+// }
+
+//10번 자연수 n이 매개변수로 주어집니다. n을 x로 나눈 나머지가 1이 되도록 하는 가장 작은 자연수 x를 return
+// function solution(n) {
+//     for(let i = 2; i < n; i++) {
+//         if(n % i === 1) return i;
+//     }
+// }
+// solution(12);
+
+//11번
+function solution(seoul) {
+  //seoul = ["Jane","Kim"];
+  //seoul배열안에 있는 "Kim"위치 찾기
+  let index = seoul.indexOf('Kim');
+
+  let answer = `김서방은 ${seoul.indexof('Kim')}에 있다`;
+  return answer;
 }
+solution(['Jane', 'Kim']);
