@@ -91,12 +91,12 @@
 // solution(12);
 
 //11번
-function solution(seoul) {
-  //seoul = ["Jane","Kim"];
-  //seoul배열안에 있는 "Kim"위치 찾기
-  let index = seoul.indexOf('Kim');
+// function solution(seoul) {
+//   //seoul = ["Jane","Kim"];
+//   //seoul배열안에 있는 "Kim"위치 찾기
+//   let index = seoul.indexOf('Kim');
 
-  let answer = `김서방은 ${seoul.indexof('Kim')}에 있다`;
-  return answer;
-}
-solution(['Jane', 'Kim']);
+//   let answer = `김서방은 ${seoul.indexof('Kim')}에 있다`;
+//   return answer;
+// }
+// solution(['Jane', 'Kim']);
