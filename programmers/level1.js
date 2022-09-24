@@ -100,3 +100,13 @@
 //   return answer;
 // }
 // solution(['Jane', 'Kim']);
+
+//12번 뒤에 4자리 빼고 마스킹
+function solution(phone_number) {
+  //phone_number = "01033334444"
+  //결과 "*******4444"
+
+  answer = phone_number.slice(0, -4).replace(/[0-9]/g, '*') + phone_number(-4);
+}
+
+solution('01033334444');
