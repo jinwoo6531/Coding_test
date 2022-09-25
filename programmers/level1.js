@@ -102,11 +102,35 @@
 // solution(['Jane', 'Kim']);
 
 //12번 뒤에 4자리 빼고 마스킹
-function solution(phone_number) {
-  //phone_number = "01033334444"
-  //결과 "*******4444"
+// function solution(phone_number) {
+//   //phone_number = "01033334444"
+//   //결과 "*******4444"
 
-  answer = phone_number.slice(0, -4).replace(/[0-9]/g, '*') + phone_number(-4);
+//   answer = phone_number.slice(0, -4).replace(/[0-9]/g, '*') + phone_number(-4);
+// }
+
+//13번
+// function solution(arr, divisor) {
+//   //arr = [5, 9, 7, 10];
+//   //divisor = 5;
+//   //return [5,10]
+//   let newArr = arr.filter((item) => item % divisor === 0);
+
+//   return newArr.length === 0 ? [-1] : newArr.sort((a, b) => a - b);
+// }
+
+//14번
+function solution(arr) {
+    if(arr.length <= 1){
+        return [-1]
+    }
+    let arrMin = Math.min(...arr)
+    let result = []
+    for(let i in arr){
+        if(arrMin !== arr[i]){
+            result.push(arr[i])
+        }
+    }
+    return result
 }
-
-solution('01033334444');
+solution([4, 3, 2, 1]);
