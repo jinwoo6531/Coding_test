@@ -120,17 +120,28 @@
 // }
 
 //14번
-function solution(arr) {
-    if(arr.length <= 1){
-        return [-1]
+// function solution(arr) {
+//     if(arr.length <= 1){
+//         return [-1]
+//     }
+//     let arrMin = Math.min(...arr)
+//     let result = []
+//     for(let i in arr){
+//         if(arrMin !== arr[i]){
+//             result.push(arr[i])
+//         }
+//     }
+//     return result
+// }
+// solution([4, 3, 2, 1]);
+
+//15번
+function solution(absolutes, signs) {
+    let answer = 0;
+    
+    for(let i=0; i < absolutes.length; i++) {
+        answer += signs[i] ? absolutes[i] : -absolutes[i];
     }
-    let arrMin = Math.min(...arr)
-    let result = []
-    for(let i in arr){
-        if(arrMin !== arr[i]){
-            result.push(arr[i])
-        }
-    }
-    return result
+    
+    return answer
 }
-solution([4, 3, 2, 1]);
