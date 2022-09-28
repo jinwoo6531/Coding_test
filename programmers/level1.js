@@ -136,12 +136,30 @@
 // solution([4, 3, 2, 1]);
 
 //15번
-function solution(absolutes, signs) {
-    let answer = 0;
+// function solution(absolutes, signs) {
+//     let answer = 0;
     
-    for(let i=0; i < absolutes.length; i++) {
-        answer += signs[i] ? absolutes[i] : -absolutes[i];
+//     for(let i=0; i < absolutes.length; i++) {
+//         answer += signs[i] ? absolutes[i] : -absolutes[i];
+//     }
+    
+//     return answer
+// }
+
+//16번 수박수
+function solution(n) {
+    //n = 1 -> 수
+    //n = 2 -> 수박
+    //n = 3 -> 수박수
+    
+    var answer = ''; 
+    for(let i =0; i < n; i++) {
+        if(i % 2 === 0) {
+            answer += '수'
+        } else {
+            answer += '박'
+        }
     }
     
-    return answer
+    return answer;
 }
