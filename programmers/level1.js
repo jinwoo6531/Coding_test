@@ -138,28 +138,42 @@
 //15번
 // function solution(absolutes, signs) {
 //     let answer = 0;
-    
+
 //     for(let i=0; i < absolutes.length; i++) {
 //         answer += signs[i] ? absolutes[i] : -absolutes[i];
 //     }
-    
+
 //     return answer
 // }
 
 //16번 수박수
-function solution(n) {
-    //n = 1 -> 수
-    //n = 2 -> 수박
-    //n = 3 -> 수박수
-    
-    var answer = ''; 
-    for(let i =0; i < n; i++) {
-        if(i % 2 === 0) {
-            answer += '수'
-        } else {
-            answer += '박'
-        }
+// function solution(n) {
+//     //n = 1 -> 수
+//     //n = 2 -> 수박
+//     //n = 3 -> 수박수
+
+//     var answer = '';
+//     for(let i =0; i < n; i++) {
+//         if(i % 2 === 0) {
+//             answer += '수'
+//         } else {
+//             answer += '박'
+//         }
+//     }
+
+//     return answer;
+// }
+
+//17번
+function solution(numbers) {
+  //[1,2,3,4,6,7,8,0]
+  // 5 + 9 = 14
+  var answer = 0;
+  for (let i = 0; i < 10; i++) {
+    if (!numbers.includes(i)) {
+      answer += i;
     }
-    
-    return answer;
+  }
+
+  return answer;
 }
