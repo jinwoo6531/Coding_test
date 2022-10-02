@@ -179,11 +179,19 @@
 // }
 
 //18번
+// function solution(s) {
+//   //s = "Zbcdefg"
+//   //return "gfedcbZ"
+
+//   return s.split('').sort().reverse().join('');
+// }
+
+// solution('Zbcdefg');
+
+//19번
 function solution(s) {
-  //s = "Zbcdefg"
-  //return "gfedcbZ"
+  // var answer = true;
+  // return answer;
 
-  return s.split('').sort().reverse().join('');
+  return (s.length === 4 || s.length === 6) && Number(s) ? true : false;
 }
-
-solution('Zbcdefg');
