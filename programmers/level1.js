@@ -189,9 +189,24 @@
 // solution('Zbcdefg');
 
 //19번
-function solution(s) {
-  // var answer = true;
-  // return answer;
+// function solution(s) {
+//   // var answer = true;
+//   // return answer;
 
-  return (s.length === 4 || s.length === 6) && Number(s) ? true : false;
+//   return (s.length === 4 || s.length === 6) && Number(s) ? true : false;
+// }
+
+//20번
+function solution(arr1, arr2) {
+  let answer = [];
+
+  for (let i = 0; i < arr1.length; i++) {
+    let row = [];
+    for (let j = 0; j < arr1[0].length; j++) {
+      row.push(arr1[i][j] + arr2[i][j]);
+    }
+    answer.push(row);
+  }
+
+  return answer;
 }
