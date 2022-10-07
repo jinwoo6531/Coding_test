@@ -210,3 +210,52 @@
 
 //   return answer;
 // }
+
+// function solution(s) {
+//   console.log(s.split(''));
+//   let num = [
+//     'zero',
+//     'one',
+//     'two',
+//     'three',
+//     'four',
+//     'five',
+//     'six',
+//     'seven',
+//     'eight',
+//     'nine',
+//   ];
+//   let answer = s;
+
+//   for (let i = 0; i < num.length; i++) {
+//     let test = answer.split(num[i]);
+//     console.log('zz', test);
+//     answer = test.join(i);
+//   }
+//   return answer;
+// }
+
+// solution('one4seveneight');
+
+// function solution(s) {
+//   let answer = s;
+//   let str = [
+//     'zero',
+//     'one',
+//     'two',
+//     'three',
+//     'four',
+//     'five',
+//     'six',
+//     'seven',
+//     'eight',
+//     'nine',
+//   ];
+//   str.forEach((v, i) => {
+//     answer = answer.split(v).join(i);
+
+//   });
+//   return Number(answer);
+// }
+
+solution('one4seveneight');
