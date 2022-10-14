@@ -286,7 +286,7 @@
 //   console.log('zz', d);
 // }
 
-//앞 대문자 문자열 만들기
+//앞 대문자 문자열 만들기.
 function solution(s) {
   s = s.toLowerCase();
   let answer = s.split(' ').map((item) => {
