@@ -259,10 +259,48 @@
 // }
 
 //내적
-function solution(a, b) {
-  let answer = 0;
-  for (let i = 0; i < a.length; i++) {
-    answer += a[i] * b[i];
-  }
-  return answer;
+// function solution(a, b) {
+//   let answer = 0;
+//   for (let i = 0; i < a.length; i++) {
+//     answer += a[i] * b[i];
+//   }
+//   return answer;
+// }
+
+// 예산
+//[1,3,2,5,4]
+//9
+// function solution(d, budget) {
+//   d.sort((a, b) => a - b);
+//   console.log(
+//     '확인',
+//     d.sort((a, b) => a - b)
+//   );
+//   while (
+//     d.reduce((acc, cur) => {
+//       return acc + cur;
+//     }, 0) > budget
+//   )
+//     d.pop();
+
+//   console.log('zz', d);
+// }
+
+//앞 대문자 문자열 만들기
+function solution(s) {
+  s = s.toLowerCase();
+  let answer = s.split(' ').map((item) => {
+    let test = item.split('');
+    if (test[0] !== null) test[0] = test[0].toUpperCase();
+    return test.join('');
+  });
+  return answer.join(' ');
+}
+solution('3people unFollowed me');
+
+function solution(s) {
+  return s
+    .split(' ')
+    .map((v) => v.charAt(0).toUpperCase() + v.substring(1).toLowerCase())
+    .join(' ');
 }
