@@ -287,20 +287,20 @@
 // }
 
 //앞 대문자 문자열 만들기.
-function solution(s) {
-  s = s.toLowerCase();
-  let answer = s.split(' ').map((item) => {
-    let test = item.split('');
-    if (test[0] !== null) test[0] = test[0].toUpperCase();
-    return test.join('');
-  });
-  return answer.join(' ');
-}
-solution('3people unFollowed me');
+// function solution(s) {
+//   s = s.toLowerCase();
+//   let answer = s.split(' ').map((item) => {
+//     let test = item.split('');
+//     if (test[0] !== null) test[0] = test[0].toUpperCase();
+//     return test.join('');
+//   });
+//   return answer.join(' ');
+// }
+// solution('3people unFollowed me');
 
-function solution(s) {
-  return s
-    .split(' ')
-    .map((v) => v.charAt(0).toUpperCase() + v.substring(1).toLowerCase())
-    .join(' ');
-}
+// function solution(s) {
+//   return s
+//     .split(' ')
+//     .map((v) => v.charAt(0).toUpperCase() + v.substring(1).toLowerCase())
+//     .join(' ');
+// }
