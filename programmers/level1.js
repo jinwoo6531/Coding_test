@@ -306,6 +306,7 @@
 // }
 
 //10/19 해시문제
+//ipad test
 function solution(participant, completion) {
   //참여자 ["leo", "kiki", "eden"]
   //완주자 ["eden", "kiki"]
