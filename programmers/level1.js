@@ -307,16 +307,16 @@
 
 //10/19 해시문제
 //ipad test
-function solution(participant, completion) {
-  //참여자 ["leo", "kiki", "eden"]
-  //완주자 ["eden", "kiki"]
-  //leo 출력
-  participant.sort();
-  completion.sort();
+// function solution(participant, completion) {
+//   //참여자 ["leo", "kiki", "eden"]
+//   //완주자 ["eden", "kiki"]
+//   //leo 출력
+//   participant.sort();
+//   completion.sort();
 
-  for (let i = 0; i < participant.length; i++) {
-    if (participant[i] !== completion[i]) {
-      return participant[i];
-    }
-  }
-}
+//   for (let i = 0; i < participant.length; i++) {
+//     if (participant[i] !== completion[i]) {
+//       return participant[i];
+//     }
+//   }
+// }
